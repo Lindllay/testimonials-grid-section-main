@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: hsl(210, 46%, 95%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+.main{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(255px, 255px));
+    align-content: center;
+    height: 100vh;
+    gap:30px;
+    margin: 0% 8%;
+    grid-template-areas: 
+    "daniel daniel johnatan kira"
+    "jeanette patrick patrick kira";
+}
+.daniel{
+    background-color: hsl(266, 51%, 45%);
+    grid-area: daniel;
+}
+.johnatan{
+    background-color: hsl(216, 21%, 24%);
+    grid-area: johnatan;
+}
+.kira{
+    background-color: hsl(0, 0%, 100%);
+    grid-area: kira;
+    width: 190px;
+}
+.jeanette{
+    background-color: hsl(0, 0%, 100%);
+    grid-area: jeanette;
+}
+.patrick{
+    background-color: hsl(220, 30%, 8%);
+    grid-area: patrick;
+}
+.daniel, .johnatan, .kira, .jeanette, .patrick{
+    padding: 30px;
+    border-radius: 15px;
+}
+.daniel img, .johnatan img, .kira img, .jeanette img, .patrick img{
+    border-radius: 40px;
+    border: 2px white solid;
+    width:40px;
+    display: inline-block;
+}
+.wizytowka{
+    display: flex;
+    align-items: center;
+}
+.paragrafy{
+    margin-left: 10px;
+}
+h1{
+    color:white;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 15px 0;
+}
+.kira h1, .jeanette h1{
+    color: rgb(46, 46, 46);
+}
+.daniel .citation{
+    color: hsl(263, 88%, 78%);
+    font-size: 0.8125rem;
+    line-height: 1.3;
+}
+.johnatan .citation{
+    color: hsl(0, 0%, 68%);
+    font-size: 0.8125rem;
+    line-height: 1.3;
+}
+.kira .citation, .jeanette .citation{
+    color:rgb(100, 100, 100);
+    font-size: 0.8125rem;
+    line-height: 1.3;
+}
+.patrick .citation{
+    color:rgb(133, 133, 133);
+    font-size: 0.8125rem;
+    line-height: 1.3;
+}
+.daniel .verified{
+    color:hsl(263, 88%, 78%);
+    font-size: 11px;
+}
+.daniel .imie{
+    color:rgb(220, 194, 255);
+    font-size: 0.8125rem;
+}
+.johnatan .verified{
+    color:hsl(214, 9%, 55%);
+    font-size: 11px;
+}
+.johnatan .imie{
+    color:rgb(204, 204, 204);
+    font-size: 0.8125rem;
+}
+.kira .verified{
+    color:hsl(0, 0%, 58%);
+    font-size: 11px;
+}
+.kira .imie{
+    color:rgb(75, 75, 75);
+    font-size: 0.8125rem;
+}
+.jeanette .verified{
+    color:hsl(0, 0%, 58%);
+    font-size: 11px;
+}
+.jeanette .imie{
+    color:rgb(75, 75, 75);
+    font-size: 0.8125rem;
+}
+.patrick .verified{
+    color:hsl(224, 10%, 41%);
+    font-size: 11px;
+}
+.patrick .imie{
+    color:white;
+    font-size: 0.8125rem;
+}
+.attribution{
+    display: inline-block;
+    font-size: 11px;
+}
